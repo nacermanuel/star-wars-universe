@@ -1,0 +1,40 @@
+
+ttps://developers.themoviedb.org/3/getting-started/introduction
+
+// clave de themoviedb API.2023
+// API KEY 94cd0919045936987eb36de68d9b0242
+
+codigo de API
+Episodio I : 1893
+Episodio II : 1894
+Episodio III : 1895
+Episodio IV : 11
+Episodio V: 1891
+Episodio VI: 1892
+Episodio VII: 140607
+Episodio VIII: 181808
+Episodio IX: 181812
+
+348350-solo-a-star-wars-story
+1015606-obi-wan-kenobi-a-jedi-s-return
+330459-rogue-one-a-star-wars-story
+
+
+-------------
+
+import { useState ,useEffect } from 'react';
+
+    const [ data, setData] = useState('')
+  
+    useEffect(()=> {
+    
+    fetch('https://api.themoviedb.org/3/movie/550?api_key=94cd0919045936987eb36de68d9b0242')
+      .then(response => response.json())
+      .then(resp => {
+        setData(resp.original_title)
+        console.log(resp)
+      })
+
+  },[])
+
+  -----------------------------------------

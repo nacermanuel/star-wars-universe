@@ -1,5 +1,4 @@
-// clave de themoviedb API.2023
-// API KEY 94cd0919045936987eb36de68d9b0242
+
 
 import fetch from "node-fetch";
 

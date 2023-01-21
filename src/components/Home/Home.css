@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(19, 24, 24);
+}
+
+.tituloHome{
+    color: aquamarine;
+}
+
+.seleccionEpisodio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.seleccionEpisodio img{
+    max-width: 250px;
+    margin: 5px;
+}

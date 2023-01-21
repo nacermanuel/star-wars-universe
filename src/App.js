@@ -1,26 +1,19 @@
 import './App.css';
-import { useState ,useEffect } from 'react';
+import Home from './components/Home/Home'
+import Movie from './components/Movie/Movie';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  
-  const [ data, setData] = useState('')
-  
-  useEffect(()=> {
-    
-    fetch('https://api.themoviedb.org/3/movie/550?api_key=94cd0919045936987eb36de68d9b0242')
-      .then(response => response.json())
-      .then(resp => {
-        setData(resp.original_title)
-        console.log(resp)
-      })
-
-  },[])
-
 
   return (
-    <div className="App">
-      {data}
-     </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/movie/:id" element={<Movie/>}/>      
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
