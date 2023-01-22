@@ -1,16 +1,15 @@
 import React from 'react'
-import NavBar from '../NavBar/NavBar'
 import './Home.css'
 import { Link } from 'react-router-dom'
+//import NavBar from '../NavBar/NavBar.jsx'
 
 
 export default function Home() {
 
   return (
-   <>
-    <NavBar/>
+  <>
     <div className='contenedorPrincipal'>
-        <div className="tituloHome">Choose Your Star Wars Favorite Movie</div>
+        <h2 className='escoge'>Choose Your Star Wars Favorite Movie</h2>
         <div className="seleccionEpisodio">
             <Link to='/movie/1893'>
                 <img src="https://image.tmdb.org/t/p/original/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg" alt="posterEpisodio1" />
@@ -30,6 +29,6 @@ export default function Home() {
 
         </div>
     </div>
-   </>
+    </>
   )
 }

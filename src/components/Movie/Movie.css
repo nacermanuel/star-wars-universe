@@ -1,0 +1,48 @@
+h1{
+    color: aqua;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    /* font-size: 1.5rem; */
+}
+
+h2{
+    /* font-size: 1.5rem; */
+    color: aqua;
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+
+
+.main{
+    background-color: aqua;
+    display: flex;
+    gap: 5px;
+    padding: 10px 25px;
+    background-image: url(https://image.tmdb.org/t/p/original/d8duYyyC9J5T825Hg7grmaabfxQ.jpg);
+    background-size: cover;
+}
+
+.main .imagen{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .imagen img{
+    max-width: -webkit-fill-available ;
+}
+
+.main .texto{
+    width: 75%;
+    padding: 10px 0 0 15px;
+    background-color: rgb(228, 245, 220, 0.5);
+    border-radius: 5px;
+    
+}
+
+.main .texto .overView{
+    font-size: 1.5rem;
+}
+

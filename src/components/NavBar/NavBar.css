@@ -1,5 +1,5 @@
 .nav{
-    background-color: darkgrey;
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -16,4 +16,13 @@
     gap: 1rem;
 }
 
+.nav img{
+    max-height: 45px;
+    border: solid 1px;
+    border-color: #efd520;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 2px;
+
+}
 

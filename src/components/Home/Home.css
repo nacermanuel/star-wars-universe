@@ -2,10 +2,14 @@ body{
     background-color: rgb(19, 24, 24);
 }
 
-.tituloHome{
-    color: aquamarine;
+.escoge{
+    color: aqua;
+    text-align: center;
 }
 
+.prueba{
+    background-color: brown;
+}
 .seleccionEpisodio{
     display: flex;
     flex-wrap: wrap;
