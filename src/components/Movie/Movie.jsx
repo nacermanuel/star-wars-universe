@@ -30,12 +30,12 @@ export default function Movie() {
     
   return (
     <>
-        <h1>{data.original_title}</h1>
         <div className="main">
           <div className="imagen">
             <img src={`https://image.tmdb.org/t/p/original${data.poster_path}`} alt="" />
           </div>
           <div className="texto">
+            <h1>{data.original_title}</h1>
             <h2>Release Date: {data.release_date}</h2>
             <h2>Budget: {formatter.format(data.budget)}</h2>
             <h2>Revenue: {formatter.format(data.revenue)}</h2>
@@ -44,7 +44,7 @@ export default function Movie() {
             <p className='overView'>{data.overview}</p>
           </div>
         </div>
-        <h2>Main Characters:</h2>
+        {/* <h2>Main Characters:</h2> */}
        
     </>
   )

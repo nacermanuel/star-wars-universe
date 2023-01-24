@@ -23,3 +23,36 @@ body{
     max-width: 250px;
     margin: 5px;
 }
+
+.portadasPelis{
+    display: flex;
+    flex-flow: column;
+    margin-top: 22px;
+}
+
+.divBotones{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.botonScore{
+    width: 35%;
+    margin-top: -7px;
+    position: absolute;
+}
+
+
+.dot{
+    height: 55px;
+    width: 55px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: -27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

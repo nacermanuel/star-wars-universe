@@ -20,6 +20,7 @@ h2{
     padding: 10px 25px;
     background-image: url(https://image.tmdb.org/t/p/original/d8duYyyC9J5T825Hg7grmaabfxQ.jpg);
     background-size: cover;
+    align-items: center;
 }
 
 .main .imagen{
@@ -36,9 +37,10 @@ h2{
 
 .main .texto{
     width: 75%;
-    padding: 10px 0 0 15px;
-    background-color: rgb(228, 245, 220, 0.5);
+    padding: 10px 0 10px 15px;
+    background-color: rgb(228, 245, 220, 0.7);
     border-radius: 5px;
+    height: -webkit-fill-available;
     
 }
 

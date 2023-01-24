@@ -10,14 +10,16 @@ export default function NavBar() {
             <Link to='/'>
                 <img src={logo} alt="" />
             </Link>
-            <ul>
+            
+            <h2 className='tituloNav'>Star Wars Viewer Ranking</h2>
+            {/* <ul>
                 <li>
                     <a href="/">Uno</a>
                 </li>
                 <li>
                     <a href="/">Dos</a>
                 </li>
-            </ul>
+            </ul> */}
         </nav>
     </>
   )
